@@ -1,3 +1,7 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
 body, html {
     height: 100%;
     margin: 0;
@@ -18,6 +22,26 @@ section{
   padding-bottom: 100px;
 }
 
+.nav-item{
+    padding-left: 20px;
+}
+
+.nav-link{
+    color: rgb(255, 98, 98) !important;
+    transition: color .2s ease;
+}
+
+.nav-link:hover{
+    color: rgb(255, 67, 67) !important;
+    transition: color .2s ease;
+    border-bottom: 2px solid rgb(255, 67, 67);
+}
+
+.nav-link.active{
+    color: rgb(255, 22, 22) !important; 
+    border-bottom: 2px solid rgb(255, 22, 22);
+}
+
 /* skills section  */
 .Count:after{
     content:"%"
@@ -29,7 +53,7 @@ section{
       margin-bottom:15px;
       width:100%;
       background:#eee;
-      height:35px;
+      height:27px;
       border-radius:3px;
       -moz-border-radius:3px;
       -webkit-border-radius:3px;
@@ -49,11 +73,11 @@ section{
       position:absolute;
       top:0;
       left:0;
-  width:110px;
+    width:110px;
       font-weight:bold;
       font-size:13px;
       color:#ffffff;
-      background:#6adcfa;
+      background:rgb(255, 22, 22) !important;
       -webkit-border-top-left-radius:3px;
       -webkit-border-bottom-left-radius:4px;
       -moz-border-radius-topleft:3px;
@@ -66,8 +90,8 @@ section{
       display:block;
       background:rgba(0, 0, 0, 0.1);
       padding:0 20px;
-      height:35px;
-      line-height:35px;
+      height:27px;
+      line-height:28px;
       -webkit-border-top-left-radius:3px;
       -webkit-border-bottom-left-radius:3px;
       -moz-border-radius-topleft:3px;
@@ -77,9 +101,9 @@ section{
   }
   
   .skillbar-bar {
-      height:35px;
+      height:27px;
       width:0px;
-      background:#6adcfa;
+      background: rgb(255, 98, 98) !important;
       border-radius:3px;
       -moz-border-radius:3px;
       -webkit-border-radius:3px;
@@ -91,7 +115,7 @@ section{
       top:0;
       font-size:11px;
       height:35px;
-      line-height:35px;
+      line-height:28px;
       color:#ffffff;
       color:rgba(0, 0, 0, 0.4);
   }
