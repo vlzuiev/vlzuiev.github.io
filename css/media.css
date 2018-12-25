@@ -72,7 +72,7 @@
     .navbar-nav .nav-item{ 
     }
 
-    .navbar-nav .nav-item .nav-link.active{
+    .navbar-nav .nav-item .nav-link.active,  .navbar-nav .nav-item .nav-link:focus{
         border: none;
     }
 
