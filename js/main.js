@@ -18,34 +18,19 @@ $(document).ready(function () {
         }
     });
 
-    $('.carousel').slick({ 
-        centerMode:true,
-        slidesToShow: 1, 
-        initialSlide: 5, 
-        infinite: true,
-        cssEase: 'linear',
+    $(document).on('click', '.cta', function () {
+        $(this).toggleClass('active')
+    })
+
+    $('.carousel').slick({  
+        slidesToShow: 1,  
+        infinite: true, 
+        dots: true,
         variableWidth: true,
-        variableHeight: true,  
-        autoplay: true,
-        autoplaySpeed: 2000, 
+        variableHeight: true,   
         nextArrow: '<i class="fas fa-angle-right"></i>',
         prevArrow: '<i class="fas fa-angle-left"></i>',
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: { 
-                    arrows: false,
-                    centerPadding: '0'
-                }
-            },
-            {
-                breakpoint: 770,
-                settings: {
-                    arrows: false,
-                    centerPadding: '0' 
-                }
-            }
-        ]
+        arrows: false
     });
 
     $(document).scroll(function () {
@@ -63,6 +48,23 @@ $(document).ready(function () {
 
             });
         }
+    });
+
+    $(window).bind('scroll', function () {
+        if ($(this).scrollTop() > $(this).height()) {
+            $('.top').addClass('active');
+        } else {
+            $('.top').removeClass('active');
+        }
+    });
+
+    $('.top').click(function () {
+        $('html, body').stop().animate({
+            scrollTop: 0
+        },
+            'slow',
+            'swing'
+        )
     });
 });
 

@@ -1,0 +1,43 @@
+@media (max-width: 1300px) {  
+    
+}
+@media (max-width: 992px) {  
+    #about > div > div:nth-child(2) > div.col-lg-5{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .project-media{
+        height: 100px;
+    }
+
+    .project{
+        -webkit-box-shadow: 4px 7px 36px -6px rgba(0,0,0,0.75);
+        -moz-box-shadow: 4px 7px 36px -6px rgba(0,0,0,0.75);
+        box-shadow: 4px 7px 36px -6px rgba(0,0,0,0.75);
+    }
+
+    .read-more{
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s, opacity 0.5s linear;
+        color: var(--red-light-color) !important; 
+     }
+
+     .form-check, .div-btn{
+         text-align: center !important;
+     }
+}
+
+@media (max-width: 768px) { 
+    .block{
+        display: inline-block !important;
+    }
+   
+}
+
+@media (max-width: 576px) {  
+}
+
+
+
+
