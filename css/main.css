@@ -1,3 +1,9 @@
+:root {
+    --red-color: rgb(255, 22, 22);  
+    --red-light-color: rgb(255, 67, 67);  
+    --red-ultralight-color: rgb(255, 98, 98);  
+  }
+
 *{
     font-family: 'Work Sans', sans-serif;
 }
@@ -5,7 +11,50 @@
 body, html {
     height: 100%;
     margin: 0;
-  }
+}
+
+.space{
+    margin-top: 50px;
+}
+
+.title{ 
+    margin-bottom: 70px;
+    color: var(--red-color);
+    position: relative; 
+} 
+/* .title::before, .title::after{ 
+    background-color: var(--red-ultralight-color);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 15%;
+}  */
+
+
+
+.title:after ,.title:before{
+    position: absolute;
+        content: '';
+        height: 2px;
+		  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+        bottom: -2px;  
+        margin: 0 auto;
+		  left: 50px;
+        right: 0;
+          width: 10%;
+		  background: var(--red-ultralight-color);
+}
+
+.title:before { 
+		  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+        bottom: -10px;    
+        right: 100px; 
+		  left: 0;
+
+}
+
 
 .s-top{  
     background-image: url('../img/img-top.jpg'); 
@@ -27,20 +76,84 @@ section{
 }
 
 .nav-link{
-    color: rgb(255, 98, 98) !important;
+    color: var(--red-ultralight-color) !important;
     transition: color .2s ease;
 }
 
 .nav-link:hover{
-    color: rgb(255, 67, 67) !important;
+    color: var(--red-light-color) !important;
     transition: color .2s ease;
-    border-bottom: 2px solid rgb(255, 67, 67);
+    border-bottom: 2px solid var(--red-light-color);
 }
 
 .nav-link.active{
-    color: rgb(255, 22, 22) !important; 
-    border-bottom: 2px solid rgb(255, 22, 22);
+    color: var(--red-color) !important; 
+    border-bottom: 2px solid var(--red-color);
 }
+
+/* navbar mobile */  
+.navbar-toggler.x{
+    border: none;
+}
+ 
+.navbar-toggler.x .icon-bar{
+    width: 35px;
+    display: flex;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    background-color: var(--red-color);
+}
+
+.navbar-toggler.x:focus{
+    outline: none;
+}
+
+/* ANIMATED X */
+button.navbar-toggler.x > span:nth-child(1) {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 20% 10%;
+	-ms-transform-origin: 20% 10%;
+    transform-origin: 20% 10%;
+}
+
+button.navbar-toggler.x > span:nth-child(2) {
+    opacity: 0; 
+	filter: alpha(opacity=0);
+}
+
+button.navbar-toggler.x > span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 10% 90%;
+	-ms-transform-origin: 10% 90%;
+	transform-origin: 10% 90%;
+}
+
+/* ANIMATED X COLLAPSED */
+button.navbar-toggler.x.collapsed > span:nth-child(1) {
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+
+button.navbar-toggler.x.collapsed > span:nth-child(2) {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+button.navbar-toggler.x.collapsed > span:nth-child(3) {
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+/* END ANIMATED X */
+/* navbar mobile end */
 
 /* skills section  */
 .Count:after{
@@ -77,7 +190,7 @@ section{
       font-weight:bold;
       font-size:13px;
       color:#ffffff;
-      background:rgb(255, 22, 22) !important;
+      background:var(--red-color) !important;
       -webkit-border-top-left-radius:3px;
       -webkit-border-bottom-left-radius:4px;
       -moz-border-radius-topleft:3px;
@@ -103,7 +216,7 @@ section{
   .skillbar-bar {
       height:27px;
       width:0px;
-      background: rgb(255, 98, 98) !important;
+      background: var(--red-ultralight-color) !important;
       border-radius:3px;
       -moz-border-radius:3px;
       -webkit-border-radius:3px;
@@ -218,7 +331,7 @@ body > section.s-project > div > div.row.text-center > div p{
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
-    color: rgb(255, 67, 67) !important; 
+    color: var(--red-light-color) !important; 
  }
 
  .read-more .fa-angle-right::before{
@@ -230,3 +343,13 @@ body > section.s-project > div > div.row.text-center > div p{
     visibility: visible;
     opacity: 1;
 } 
+
+.s-portfolio{
+    background-color: whitesmoke;
+}
+ 
+/* section about */
+
+
+
+/* section about end */
