@@ -655,7 +655,7 @@ input[type="color"]:focus,
 /* footer */
 
 footer{
-    background-color: rgb(206, 206, 206 ,.1);
+    background-color:rgba(214, 214, 214, 0.3);
 }
 
 .social-links{
@@ -671,7 +671,7 @@ footer .icon{
 }
 
 footer i{
-    background-color: #aaa;
+    background-color: #fff;
     padding: 20px;
     color: var(--red-color);
     width: 55px !important;

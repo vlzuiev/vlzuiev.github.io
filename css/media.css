@@ -21,6 +21,7 @@
         opacity: 1;
         transition: visibility 0s, opacity 0.5s linear;
         color: var(--red-light-color) !important; 
+        border-bottom: 1px solid var(--red-light-color);
      }
 
      .form-check, .div-btn{
