@@ -19,9 +19,14 @@ $(document).ready(function () {
     });
 
     $('.carousel').slick({ 
+        centerMode:true,
+        slidesToShow: 1, 
+        initialSlide: 5, 
         infinite: true,
-        centerMode: true,
-        autoplay: false,
+        cssEase: 'linear',
+        variableWidth: true,
+        variableHeight: true,  
+        autoplay: true,
         autoplaySpeed: 2000, 
         nextArrow: '<i class="fas fa-angle-right"></i>',
         prevArrow: '<i class="fas fa-angle-left"></i>',
