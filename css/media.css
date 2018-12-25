@@ -32,10 +32,50 @@
     .block{
         display: inline-block !important;
     }
+
+    .about-subtitle{
+        width: inherit;
+    }
+    
+    .skills{
+        margin-top: 40px;
+    }
+
+    .navbar-brand{
+        margin-left: 10px;
+    }
+    .navbar-collapse{
+        text-align: center;
+        background-color: rgba(245, 245, 245, 0.9) !important; 
+        /* padding: 300px 100px; */
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+    .navbar-collapse.collapsing {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+    .navbar-collapse.collapse.show {
+        height: 100vh;
+    }
+    .navbar-nav {
+        height: 100vh;
+    }
    
 }
 
 @media (max-width: 576px) {  
+    .s-top h1{
+        font-size: 25px;
+    }
+
+   
 }
 
 

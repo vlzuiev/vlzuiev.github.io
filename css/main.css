@@ -114,7 +114,8 @@ section{
     border-bottom: 2px solid var(--red-color);
 }
 
-/* navbar mobile */  
+/* navbar mobile */    
+
 .navbar-toggler.x{
     border: none;
 }
