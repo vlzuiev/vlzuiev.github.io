@@ -148,7 +148,11 @@ section{
     border: none;
     background-color: transparent;
     transition: all 1s ease;  
+    background: transparent;
+    -webkit-appearance: none !important;
+
   }
+ 
   
   .cta {
     height: 50px;
