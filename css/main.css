@@ -122,12 +122,13 @@ section{
 .block {
     display: none !important;
     height: 60px;
-    width: 60px;
-    border-radius: 5px;
+    width: 60px; 
     display: flex;
     align-items: center;
-    justify-content: center; 
-    transition: all 1s ease;    
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    transition: all 1s ease;  
   }
   
   .cta {
