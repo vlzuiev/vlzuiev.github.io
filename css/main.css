@@ -4,9 +4,13 @@
     --red-ultralight-color: rgb(255, 98, 98);  
     --grey-color: rgb(206, 206, 206);
   }
-
+ 
 *{
     font-family: 'Work Sans', sans-serif;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
 }
 
 body, html {
@@ -17,6 +21,10 @@ body, html {
 
 .space{
     margin-top: 50px;
+}
+
+.space-about{
+    margin-top: 100px;
 }
 
 .space-small-title{
@@ -51,14 +59,22 @@ body, html {
 
 .subtitle{
     margin-bottom: 70px;
+    font-size: 20px;
 }
 
 .text-title{ 
     font-size: 25px;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .text-color{
     color: var(--red-color);
+}
+
+.text-typing{ 
+}
+.top-navbar{
+    padding: 0 !important;
 }
 
 .s-top{  
@@ -83,6 +99,8 @@ section{
 .nav-link{
     color: var(--red-ultralight-color) !important;
     transition: color .2s ease;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
 }
 
 .nav-link:hover{
@@ -219,6 +237,10 @@ button.navbar-toggler.x.collapsed > span:nth-child(3) {
 .Count:after{
     content:"%"
   }
+
+  .skills{
+      margin: auto;
+  }
   
   .skillbar {
       position:relative;
@@ -295,8 +317,8 @@ button.navbar-toggler.x.collapsed > span:nth-child(3) {
 /* skills section end */
 
 .photo{
-    width: 200px;
-    height: 250px;
+    width: 270px;
+    height: 350px;
 }
 
 /* portfolio section */
@@ -409,7 +431,16 @@ body > section.s-project > div > div.row.text-center > div p{
  
 /* section about */
 
+.about-img{
+    text-align: center;
+    margin: auto;
+}
 
+.about-subtitle{
+    width: 600px;
+    margin: auto;
+    margin-bottom: 50px;
+}
 
 /* section about end */
 
@@ -582,6 +613,10 @@ input[type="color"]:focus,
     cursor: pointer; 
 }
 
+.btn-submit:focus{
+    outline: none;
+}
+
 .material-control-input{
     display: none;
 }
@@ -641,6 +676,9 @@ footer i{
     color: var(--grey-color);
     padding-bottom: 50px;
     margin-top: 30px;
+}
+.p-logo-top{
+    margin: auto;
 }
 
 .top{

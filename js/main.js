@@ -66,6 +66,9 @@ $(document).ready(function () {
             'swing'
         )
     });
+
+    frameLooper();
+
 });
 
 $('.Count').each(function () {
@@ -78,3 +81,17 @@ $('.Count').each(function () {
         }
     });
 });
+
+var string = "You've baked a really lovely cake, but then you've used dog shit for frosting."; 
+var array = string.split("");
+var timer;
+
+function frameLooper () {
+	if (array.length > 0) {
+		document.getElementById("text-typing").innerHTML += array.shift();
+	} else {
+		clearTimeout(timer);
+			}
+	loopTimer = setTimeout('frameLooper()',50); /* change 70 for speed */
+
+}
