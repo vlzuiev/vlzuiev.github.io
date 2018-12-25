@@ -11,48 +11,45 @@
 body, html {
     height: 100%;
     margin: 0;
+    transition: all .5s ease;
 }
 
 .space{
     margin-top: 50px;
 }
 
+.space-small-title{
+    margin-top: 30px;
+}
+
 .title{ 
     margin-bottom: 70px;
     color: var(--red-color);
     position: relative; 
-} 
-/* .title::before, .title::after{ 
-    background-color: var(--red-ultralight-color);
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 15%;
-}  */
-
-
+    font-weight: bold;
+    font-size: 50px;
+}   
 
 .title:after ,.title:before{
     position: absolute;
-        content: '';
-        height: 2px;
-		  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
-        bottom: -2px;  
-        margin: 0 auto;
-		  left: 50px;
-        right: 0;
-          width: 10%;
-		  background: var(--red-ultralight-color);
+    content: '';
+    height: 2px; 
+    bottom: -2px;  
+    margin: 0 auto;
+    left: 80px;
+    right: 0;
+    width: 15%;
+    background: var(--red-ultralight-color);
 }
 
-.title:before { 
-		  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
-        bottom: -10px;    
-        right: 100px; 
-		  left: 0;
+.title:before {  
+    bottom: -10px;    
+    right: 120px; 
+    left: 0; 
+}
 
+.text-title{ 
+    font-size: 25px;
 }
 
 
@@ -353,3 +350,61 @@ body > section.s-project > div > div.row.text-center > div p{
 
 
 /* section about end */
+
+/* modal  */
+
+.modal-img{
+    width: 100%;
+    height: 400px;
+}
+
+.modal-content{
+    border-radius: 0 !important;
+}
+
+.modal-header{
+    padding: 0 !important;
+}
+
+.modal-dialog { 
+    margin: auto !important;
+    /* top: 50% !important; */
+}
+
+.modal-header .fas.fa-angle-right, .modal-header .fas.fa-angle-left{
+    position: absolute;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    bottom: 0;
+    background-color: grey;
+}
+
+.modal-header .fas.fa-angle-left{ 
+    left: 0;
+    right: inherit; 
+    z-index: 2; 
+}
+
+.modal-header .fas.fa-angle-left::before, .modal-header .fas.fa-angle-right::before{ 
+position: absolute;
+width: 10px;
+top: 30%;
+left: 50%;
+margin-left: -5px;
+color: #fff;
+} 
+
+.modal-body-title{
+    font-weight: bold;
+}
+
+.modal-body-text{
+
+}
+
+.modal-body-subtitle{ 
+    color: rgb(173, 173, 173);
+}
+
+/* modal end */

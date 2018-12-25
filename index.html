@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Vladyslav Zuiev | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -12,9 +12,11 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../vlzuiev.github.io/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../vlzuiev.github.io/slick/slick-theme.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <header class="h-header">
         <div class="top-line">
             <nav id="top-navbar" class="navbar navbar-light navbar-expand-md justify-content-between fixed-top top-navbar"
@@ -33,16 +35,16 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav pull-right">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Home</a>
+                                <a class="nav-link" href="#top">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
 
@@ -51,7 +53,7 @@
             </nav>
         </div>
     </header>
-    <section class="s-top">
+    <section class="s-top" id="top">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -62,7 +64,7 @@
             </div>
         </div>
     </section>
-    <section class="s-about">
+    <section class="s-about" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -71,7 +73,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-5">
-                    <img class="photo" src="../vlzuiev.github.io/img/photo.png" /> 
+                    <img class="photo" src="../vlzuiev.github.io/img/photo.png" />
                 </div>
                 <div class="skills col-lg-7">
                     <div class="skillbar clearfix " data-percent="95%">
@@ -120,121 +122,156 @@
             <div class="row space text-center">
                 <div class="col-lg-6 col-sm-12">
                     <img class="" src="../vlzuiev.github.io/img/logo.png" />
-                    <p class="text-title font-weight-bold">PERFORMANCE BY DEFAULT</p>
-                    <p>We use latest technologies to serve playable ads without lags on all mobile devices</p>
+                    <p class="text-title font-weight-bold space-small-title">RESPONSIVE</p>
+                    <p>My layouts will work on any device, big or small.</p>
                 </div>
                 <div class="col-lg-6 col-sm-12">
-                    <img class="" src="../vlzuiev.github.io/img/logo.png" />                    
-                    <p class="text-title font-weight-bold">TINY SIZE</p>
-                    <p>Our engine is as light as 200kb capable of near instant downloads for any platform we support</p>
+                    <img class="" src="../vlzuiev.github.io/img/logo.png" />
+                    <p class="text-title font-weight-bold space-small-title">INTUITIVE</p>
+                    <p>Strong preference for easy to use, intuitive UX/UI.</p>
                 </div>
                 <div class="col-lg-6 col-sm-12 space">
-                    <img class="" src="../vlzuiev.github.io/img/logo.png" />                   
-                    <p class="text-title font-weight-bold">OPTIMIZED FOR BETTER LTV</p>
-                    <p>With our over ten years of gaming experience, we know how to create the best playable ads that
-                        lead through download</p>
+                    <img class="" src="../vlzuiev.github.io/img/logo.png" />
+                    <p class="text-title font-weight-bold space-small-title">FAST</p>
+                    <p>Fast load times and lag free interaction, my highest priority.</p>
                 </div>
                 <div class="col-lg-6 col-sm-12 space">
-                    <img class="" src="../vlzuiev.github.io/img/logo.png" />                 
-                    <p class="text-title font-weight-bold">SUPPORT FOR MAJOR PLATFORMS</p>
+                    <img class="" src="../vlzuiev.github.io/img/logo.png" />
+                    <p class="text-title font-weight-bold space-small-title">SUPPORT FOR MAJOR PLATFORMS</p>
                     <p>We support facebook, google, ironsource, applovin, unity, vungle. if you have another network in
                         mind, let us know and we will create support in an instant</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="s-portfolio">
+    <section class="s-portfolio" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="title">Protfolio</h2>
                 </div>
-            </div>  
+            </div>
             <div class="row">
-                    <div class="col-lg-6 col-sm-12 project-full">
-                        <div class="container">
-                            <div class="row project">
-                                <div class="col-lg-4 col-sm-12 project-media">
-                                    <img class="project-media-img" src="img/building.png">
-                                </div>
-                                <div class=" col-lg-8 col-sm-12 project-content">
-                                    <p class="project-content-text-top">SASS</p>
-                                    <h4>CIRUSSPETH</h4>
-                                    <p class="project-content-text-bottom">Cirruspath was behind the highest-rated app for
-                                        integrating Salesforce with a user’s
-                                        email inbox. Cirrus Insight Mobile helps...</p>
-    
-                                    <a class="read-more">Read more <i class="fas fa-angle-right"></i> </a>
-                                </div>
+                <div class="col-lg-6 col-sm-12 project-full">
+                    <div class="container">
+                        <div class="row project">
+                            <div class="col-lg-4 col-sm-12 project-media">
+                                <img class="project-media-img" src="img/building.png">
+                            </div>
+                            <div class=" col-lg-8 col-sm-12 project-content">
+                                <p class="project-content-text-top">SASS</p>
+                                <h4>CIRUSSPETH</h4>
+                                <p class="project-content-text-bottom">Cirruspath was behind the highest-rated app for
+                                    integrating Salesforce with a user’s
+                                    email inbox. Cirrus Insight Mobile helps...</p>
+
+                                <a class="read-more">Read more <i class="fas fa-angle-right"></i> </a>
                             </div>
                         </div>
-    
-    
                     </div>
-                    <div class="col-lg-6 col-sm-12 project-full">
-                        <div class="container">
-                            <div class="row project">
-                                <div class="col-lg-4 col-sm-12 project-media">
-                                    <img class="project-media-img" src="img/building.png">
-                                </div>
-                                <div class=" col-lg-8 col-sm-12 project-content">
-                                    <p class="project-content-text-top">SASS</p>
-                                    <h4>CIRUSSPETH</h4>
-                                    <p class="project-content-text-bottom">Cirruspath was behind the highest-rated app for
-                                        integrating Salesforce with a user’s
-                                        email inbox. Cirrus Insight Mobile helps...</p>
-    
-                                    <a class="read-more">Read more <i class="fas fa-angle-right"></i> </a>
-                                </div>
+
+
+                </div>
+                <div class="col-lg-6 col-sm-12 project-full">
+                    <div class="container">
+                        <div class="row project">
+                            <div class="col-lg-4 col-sm-12 project-media">
+                                <img class="project-media-img" src="img/building.png">
                             </div>
-                        </div> 
-                    </div>
-                    <div class="col-lg-6 col-sm-12 project-full">
-                        <div class="container">
-                            <div class="row project">
-                                <div class="col-lg-4 col-sm-12 project-media">
-                                    <img class="project-media-img" src="img/building.png">
-                                </div>
-                                <div class=" col-lg-8 col-sm-12 project-content">
-                                    <p class="project-content-text-top">SASS</p>
-                                    <h4>CIRUSSPETH</h4>
-                                    <p class="project-content-text-bottom">Cirruspath was behind the highest-rated app for
-                                        integrating Salesforce with a user’s
-                                        email inbox. Cirrus Insight Mobile helps...</p>
-    
-                                    <a class="read-more">Read more <i class="fas fa-angle-right"></i> </a>
-                                </div>
+                            <div class=" col-lg-8 col-sm-12 project-content">
+                                <p class="project-content-text-top">SASS</p>
+                                <h4>CIRUSSPETH</h4>
+                                <p class="project-content-text-bottom">Cirruspath was behind the highest-rated app for
+                                    integrating Salesforce with a user’s
+                                    email inbox. Cirrus Insight Mobile helps...</p>
+
+                                <a class="read-more">Read more <i class="fas fa-angle-right"></i> </a>
                             </div>
-                        </div> 
-                    </div>
-                    <div class="col-lg-6 col-sm-12 project-full">
-                        <div class="container">
-                            <div class="row project">
-                                <div class="col-lg-4 col-sm-12 project-media">
-                                    <img class="project-media-img" src="img/building.png">
-                                </div>
-                                <div class=" col-lg-8 col-sm-12 project-content">
-                                    <p class="project-content-text-top">SASS</p>
-                                    <h4>CIRUSSPETH</h4>
-                                    <p class="project-content-text-bottom">Cirruspath was behind the highest-rated app for
-                                        integrating Salesforce with a user’s
-                                        email inbox. Cirrus Insight Mobile helps...</p>
-    
-                                    <a class="read-more">Read more <i class="fas fa-angle-right"></i> </a>
-                                </div>
-                            </div>
-                        </div> 
+                        </div>
                     </div>
                 </div>
+                <div class="col-lg-6 col-sm-12 project-full">
+                    <div class="container">
+                        <div class="row project">
+                            <div class="col-lg-4 col-sm-12 project-media">
+                                <img class="project-media-img" src="img/building.png">
+                            </div>
+                            <div class=" col-lg-8 col-sm-12 project-content">
+                                <p class="project-content-text-top">SASS</p>
+                                <h4>CIRUSSPETH</h4>
+                                <p class="project-content-text-bottom">Cirruspath was behind the highest-rated app for
+                                    integrating Salesforce with a user’s
+                                    email inbox. Cirrus Insight Mobile helps...</p>
+
+                                <a class="read-more">Read more <i class="fas fa-angle-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 project-full">
+                    <div class="container">
+                        <div class="row project" data-toggle="modal" data-target="#myModal">
+                            <div class="col-lg-4 col-sm-12 project-media">
+                                <img class="project-media-img" src="img/building.png">
+                            </div>
+                            <div class=" col-lg-8 col-sm-12 project-content">
+                                <p class="project-content-text-top">SASS</p>
+                                <h4>CIRUSSPETH</h4>
+                                <p class="project-content-text-bottom">Cirruspath was behind the highest-rated app for
+                                    integrating Salesforce with a user’s
+                                    email inbox. Cirrus Insight Mobile helps...</p>
+
+                                <a class="read-more">Read more <i class="fas fa-angle-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content"> 
+                            <!-- Modal Header -->
+                            <div class="modal-header carousel">
+                                <div>
+                                    <img class="modal-img" src="../vlzuiev.github.io/img/img-top.jpg">
+                                </div>
+                                <div>
+                                    <img class="modal-img" src="../vlzuiev.github.io/img/img-top.jpg">
+                                </div>
+                                <div>
+                                    <img class="modal-img" src="../vlzuiev.github.io/img/img-top.jpg">
+                                </div>
+                                <div>
+                                    <img class="modal-img" src="../vlzuiev.github.io/img/img-top.jpg">
+                                </div>
+                                <div>
+                                    <img class="modal-img" src="../vlzuiev.github.io/img/img-top.jpg">
+                                </div>
+                            </div> 
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <h2 class="modal-body-title">Title Here</h2>
+                                <span class="modal-body-subtitle text-uppercase">Sub title</span>
+                                <hr>
+                                <p class="modal-body-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Est voluptate laboriosam voluptas autem modi, velit distinctio facilis accusamus
+                                    unde repudiandae sunt quod amet laborum facere dignissimos asperiores praesentium.
+                                    Vel, voluptate!</p><br>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="s-contact">
+    <section class="s-contact" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="title">Contact</h2>
                 </div>
-            </div>  
+            </div>
         </div>
     </section>
     <footer>
@@ -263,7 +300,7 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
-
+<script type="text/javascript" src="../vlzuiev.github.io/slick/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
