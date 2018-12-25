@@ -411,13 +411,14 @@ body > section.s-project > div > div.row.text-center > div p{
  .project{
     transition: all .3s ease-in-out;
     margin-bottom: 20px;
- }
- 
+ } 
  .read-more{
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
     color: var(--red-light-color) !important; 
+    border: none;
+    background: none;
  }
 
  .read-more .fa-angle-right::before{
