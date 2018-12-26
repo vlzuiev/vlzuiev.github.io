@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131356343-1');
+
     $(".navbar-nav a").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
@@ -75,7 +81,7 @@ $(document).ready(function () {
         )
     });
 
-    frameLooper(); 
+    frameLooper();
 
     AOS.init();
 
@@ -102,7 +108,7 @@ $(document).ready(function () {
         mirror: false, // whether elements should animate out while scrolling past them
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-    }); 
+    });
 
     $(window).on('resize', function () {
         if ($(window).width() < 768) {
@@ -155,16 +161,16 @@ $(document).ready(function () {
 
     });
 
-});   
+});
 
-$(document).scroll(function (){
-    if($('.skills').hasClass("in-view")){
+$(document).scroll(function () {
+    if ($('.skills').hasClass("in-view")) {
         $('.skillbar').each(function () {
             $(this).find('.skillbar-bar').animate({
                 width: $(this).attr('data-percent')
             }, 3000);
-        }); 
-    } 
+        });
+    }
 })
 
 var string = "You've baked a really lovely cake, but then you've used dog shit for frosting.";
@@ -197,10 +203,10 @@ function check_if_in_view() {
         //check to see if this current container is within viewport
         if ((element_bottom_position >= window_top_position) &&
             (element_top_position <= window_bottom_position)) {
-            $element.addClass('in-view'); 
-          
-        } else { 
-            $element.removeClass('in-view'); 
+            $element.addClass('in-view');
+
+        } else {
+            $element.removeClass('in-view');
         }
     });
 }
