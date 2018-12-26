@@ -90,7 +90,20 @@ body, html {
     color: var(--red-color);
 }
 
-.text-typing {}
+.button-upwork{
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 10px 30px;
+    display: inline-block; 
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.button-upwork:focus{
+   outline: none;
+}
 
 .top-navbar {
     padding: 0 !important;
@@ -369,9 +382,20 @@ body>section.s-project>div>div.row.text-center>div p {
     margin-top: 20px;
 }
 
-.project-media {
-    background: linear-gradient(to bottom, rgba(53, 53, 53, 0.45) 100%, transparent), url('../img/thumbnail.jpg');
-    background-size: 200%;
+.project1 { 
+    background: linear-gradient(to bottom, rgba(53, 53, 53, 0.45) 100%, transparent), url('../img/Insurence\ copy\ 3.jpg'); 
+    background-size: 230%;
+    background-position: center, center;
+    float: left;
+    margin: 0;
+    transition: background-size .3s ease-in-out;
+    background-repeat: no-repeat;
+    background-color: gray
+}
+
+.project2{
+    background: linear-gradient(to bottom, rgba(53, 53, 53, 0.45) 100%, transparent), url('../img/bitlist1.png'); 
+    background-size: 240%;
     background-position: center, center;
     float: left;
     margin: 0;

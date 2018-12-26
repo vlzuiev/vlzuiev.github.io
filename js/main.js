@@ -38,7 +38,7 @@ $(document).ready(function () {
 
     $('.carousel').slick({
         slidesToShow: 1,
-        infinite: true,
+        infinite: true, 
         dots: true,
         variableWidth: true,
         variableHeight: true,
