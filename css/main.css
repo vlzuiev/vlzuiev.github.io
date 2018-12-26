@@ -700,17 +700,6 @@ footer {
     margin-right: auto !important;
 }
 
-footer .icon {
-    text-align: center;
-}
-
-footer i {
-    background-color: #fff;
-    padding: 20px;
-    color: var(--red-color);
-    width: 55px !important;
-}
-
 .copy {
     color: var(--grey-color);
     padding-bottom: 50px;
@@ -753,3 +742,98 @@ footer i {
 }
 
 /* footer end */
+
+
+/* Global Button Styles */ 
+    a.animated-button:link:after, a.animated-button:visited:after {
+        content: "";
+        position: absolute;
+        height: 0%;
+        left: 50%;
+        top: 50%;
+        width: 150%;
+        z-index: -1;
+        -webkit-transition: all 0.75s ease 0s;
+        -moz-transition: all 0.75s ease 0s;
+        -o-transition: all 0.75s ease 0s;
+        transition: all 0.75s ease 0s;
+    }
+    a.animated-button:link:hover, a.animated-button:visited:hover {
+        color: #FFF;
+        text-shadow: none;
+    }
+    a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+        height: 450%;
+    }
+    a.animated-button:link, a.animated-button:visited {
+        position: relative;
+        display: block;
+        margin: 30px auto 0;
+        padding: 14px 15px;
+        color: var(--red-color);
+        font-size:16px;
+        border-radius: 0;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        letter-spacing: .08em; 
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+    }
+    
+    /* Victoria Buttons */
+    
+    a.animated-button.victoria-one {
+        border: 2px solid  var(--red-color);
+    }
+    a.animated-button.victoria-one:after {
+        background: var(--red-ultralight-color);
+        -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+        -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+        transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    }
+    a.animated-button.victoria-two {
+        border: 2px solid var(--red-ultralight-color);
+    }
+    a.animated-button.victoria-two:after {
+        background: var(--red-ultralight-color);
+        -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+        -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+        transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    }
+    a.animated-button.victoria-three {
+        border: 2px solid var(--red-ultralight-color);
+    }
+    a.animated-button.victoria-three:after {
+        background: var(--red-ultralight-color);
+        opacity: .5;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+    a.animated-button.victoria-three:hover:after {
+        height: 140%;
+        opacity: 1;
+    }
+    a.animated-button.victoria-four {
+        border: 2px solid var(--red-ultralight-color);
+    }
+    a.animated-button.victoria-four:after {
+        background: var(--red-ultralight-color);
+        opacity: .5;
+        -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+        -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+        -webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+        transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    }
+    a.animated-button.victoria-four:hover:after {
+        opacity: 1;
+        height: 600% !important;
+    }
