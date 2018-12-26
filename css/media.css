@@ -88,6 +88,22 @@
         font-size: 25px;
     }
 
+    .slick-dotted.slick-slider {
+        margin-bottom: 0 !important;
+    }
+
+    .modal-body-title { 
+        font-size: 25px !important;
+    }
+
+    .modal-body-subtitle {
+        font-size: 13px !important; 
+    }
+
+    .modal-body-text {
+        font-size: 14px !important;
+    }
+
    
 }
 

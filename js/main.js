@@ -17,7 +17,7 @@ $(document).ready(function () {
                 window.location.hash = hash;
             });
         }
-    });
+    }); 
 
     $(".navbar-brand").on('click', function (event) {
         if (this.hash !== "") {
