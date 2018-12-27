@@ -1,5 +1,11 @@
-$(document).ready(function () {
+$(document).ready(function () { 
 
+    $('html, body').animate({
+        scrollTop: $('#top').offset().top
+    }, function () {
+        window.location.hash = '#top';
+    });
+   
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
@@ -160,8 +166,9 @@ $(document).ready(function () {
 
     });
 
-});
-
+}); 
+ 
+ 
 $(function(){
     setTimeout(frameLooper, 1500);
 });
@@ -221,3 +228,4 @@ function check_if_in_view() {
 
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
+ 
