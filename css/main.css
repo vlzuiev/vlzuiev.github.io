@@ -362,7 +362,7 @@ body>section.s-project>div>div.row.text-center>div p {
 }
 
 .project2 {
-    background: linear-gradient(to bottom, rgba(53, 53, 53, 0.45) 100%, transparent), url('../img/bitlist1.png');
+    background: linear-gradient(to bottom, rgba(53, 53, 53, 0.45) 100%, transparent), url('../img/bitlist1.jpg');
     background-size: 240%;
     background-position: center, center;
     float: left;
@@ -373,7 +373,7 @@ body>section.s-project>div>div.row.text-center>div p {
 }
 
 .project3{
-    background: linear-gradient(to bottom, rgba(53, 53, 53, 0.45) 100%, transparent), url('../img/game2.png');
+    background: linear-gradient(to bottom, rgba(53, 53, 53, 0.45) 100%, transparent), url('../img/game2.jpg');
     background-size: 230%;
     background-position: center, center;
     float: left;
@@ -384,7 +384,7 @@ body>section.s-project>div>div.row.text-center>div p {
 }
 
 .project4{
-    background: linear-gradient(to bottom, rgba(53, 53, 53, 0.45) 100%, transparent), url('../img/ld1.png');
+    background: linear-gradient(to bottom, rgba(53, 53, 53, 0.45) 100%, transparent), url('../img/ld1.jpg');
     background-size: 230%;
     background-position: center, center;
     float: left;
@@ -552,9 +552,7 @@ body>section.s-project>div>div.row {
 .modal-body-title {
     font-weight: bold;
 }
-
-.modal-body-text {}
-
+ 
 .modal-body-subtitle {
     color: rgb(173, 173, 173);
 }
