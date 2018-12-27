@@ -81,8 +81,7 @@ $(document).ready(function () {
         )
     });
 
-    frameLooper();
-
+   
     AOS.init();
 
     // You can also pass an optional settings object
@@ -161,6 +160,15 @@ $(document).ready(function () {
 
     });
 
+});
+
+$(function(){
+    setTimeout(frameLooper, 1500);
+});
+
+$(function(){
+    $('.loading').fadeOut(2000);
+    $('.loader').fadeOut(2000);
 });
 
 $(document).scroll(function () {

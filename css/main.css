@@ -834,3 +834,44 @@ a.animated-button.victoria-four:hover:after {
     opacity: 1;
     height: 600% !important;
 }
+
+.loading{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 99999999;
+    top: 0;
+    left: 0;
+    background-image:-webkit-linear-gradient(top, rgb(255, 78, 78) 0%, rgb(94, 94, 255) 100%);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.loading .loader2{ 
+    width:50px;
+    height: 50px; 
+    margin: auto;
+    border: 2px dashed white;
+    border-radius: 100%;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+.loading .loader{ 
+    width:100px;
+    height: 100px; 
+    margin: auto;
+    border: 2px dashed white;
+    border-radius: 100%;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
