@@ -105,6 +105,17 @@ body, html {
     outline: none;
 }
 
+.button-visit{ 
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background-image: linear-gradient(to top, hsla(240, 100%, 50%, 0.5) 0%, hsla(0, 100%, 50%, 0.8) 100%) ; 
+}
+
 .top-navbar {
     padding: 0 !important;
 }
@@ -353,6 +364,28 @@ body>section.s-project>div>div.row.text-center>div p {
 .project2 {
     background: linear-gradient(to bottom, rgba(53, 53, 53, 0.45) 100%, transparent), url('../img/bitlist1.png');
     background-size: 240%;
+    background-position: center, center;
+    float: left;
+    margin: 0;
+    transition: background-size .3s ease-in-out;
+    background-repeat: no-repeat;
+    background-color: gray
+}
+
+.project3{
+    background: linear-gradient(to bottom, rgba(53, 53, 53, 0.45) 100%, transparent), url('../img/game2.png');
+    background-size: 230%;
+    background-position: center, center;
+    float: left;
+    margin: 0;
+    transition: background-size .3s ease-in-out;
+    background-repeat: no-repeat;
+    background-color: gray
+}
+
+.project4{
+    background: linear-gradient(to bottom, rgba(53, 53, 53, 0.45) 100%, transparent), url('../img/ld1.png');
+    background-size: 230%;
     background-position: center, center;
     float: left;
     margin: 0;
