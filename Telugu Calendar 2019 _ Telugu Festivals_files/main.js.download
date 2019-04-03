@@ -1,0 +1,31 @@
+$(document).ready(function () {
+    $(document).on('click', '.cta', function () {
+        $(this).toggleClass('active');
+    }); 
+    
+});
+$(function(){
+	$('#news-container').vTicker({ 
+		speed: 500,
+		pause: 1500,
+		animation: 'fade',
+		mousePause: true,
+		showItems: 5
+	});
+});
+//Start active Button when click 
+$(document).ready(function($){
+  var url=window.location.href;
+  var activePage=url;
+  $('.nav_item a').each(function(){
+    var linkPage=this.href;
+    if (activePage==linkPage) {
+      $(this).closest("li").addClass("active");
+      var item=this.id;
+      if (item=='home'||item=='') {
+        $('#menu_bg').removeClass("darknavbar");
+      }
+    }
+  });
+});
+//End active Button when click

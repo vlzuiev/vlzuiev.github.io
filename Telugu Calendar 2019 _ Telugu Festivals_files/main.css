@@ -1,0 +1,232 @@
+body {
+    background-color: #f6f5f5;
+    position: relative;
+    padding-bottom: 4rem;
+    font-family: 'Maven Pro', sans-serif;
+}
+.navbar-toggler{
+    padding: 0 !important;
+    transform: scale(0.8);
+}
+select {
+    word-wrap: normal;
+    border: none;
+    padding: 8px;
+    color: #3bb4c1 !important;
+    background: transparent;
+} 
+
+.top-container {
+    padding: 0;
+}
+.dropdown-month{
+    display: none;
+}
+.logo-text{
+    color: #3bb4c1 !important;
+    padding-left: 15px;
+}
+
+.navbar-nav {
+    /* margin-left: 60px; */
+    height: 42px;
+}
+
+.navbar-nav-1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-link {
+    color: #3bb4c1 !important;
+    transition: .2s all;
+}
+
+.nav-item {
+    margin-left: 10px;
+    transition: .2s all;
+}
+
+.nav-item:hover .nav-link {
+    border-bottom: 2px solid #048998;
+    transition: .2s all;
+}
+
+.search {
+    border: none;
+    border-bottom: 2px solid #048998;
+    border-radius: 0;
+}
+
+.scrolling {
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.btn-subscribe {
+    border: 1px solid #048998;
+    margin-right: 10px;
+    border-radius: 0;
+    color: #3bb4c1;
+}
+
+.advertisement {
+    margin-top: 15px;
+    padding: 3px;
+    overflow: hidden;
+    height: 200px;
+    border: 1px solid #e9e4e6;
+}
+
+.ad-text {
+    margin-bottom: 0;
+    font-size: 10px;
+}
+
+footer {
+    height: 50px;
+    background: black;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+}
+
+.s-month {
+    background-color: black;
+}
+
+.cta {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.toggle-btn {
+    height: 2px;
+    width: 35px;
+    background-color: #048998;
+    position: relative;
+    top: 50%;
+    left: 0;
+    margin: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-btn:before {
+    content: "";
+    height: 2px;
+    width: 35px;
+    box-shadow: 0 -10px 0 0 #048998;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-btn:after {
+    content: "";
+    height: 2px;
+    width: 35px;
+    box-shadow: 0 10px 0 0 #048998;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.active {
+    background-color: #f39100;
+}
+
+.active .type8 {
+    background-color: #048998;
+}
+
+.active .type8:before {
+    left: -10px;
+    box-shadow: 0 -10px 0 0 #048998;
+    transform: translateY(0) rotate(90deg);
+}
+
+.active .type8:after {
+    box-shadow: 0 0 0 0 #048998;
+}
+
+@media (max-width: 991px) {
+    .s-month {
+        margin-top: 76px;
+    }
+    header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        background-color: rgba(245, 245, 245);
+    }
+    .navbar-collapse{
+        text-align: center;
+        background-color: rgba(245, 245, 245) !important; 
+        /* padding: 300px 100px; */
+    }
+    .navbar-collapse {
+        position: fixed;
+        top: 76px;
+        z-index: 99999;
+
+        left: 0;
+        width: 100%;
+    }
+    .navbar-collapse.collapsing {
+        position: fixed;
+        z-index: 99999;
+        top: 76px;
+        left: 0;
+        width: 100%;
+    }
+    .navbar-collapse.collapse.show {
+        height: 100vh;
+    }
+    .navbar-nav-1 {
+        height: 100vh;
+    }
+    .s-month .navbar-nav{
+        flex-direction: row;
+    }
+    
+    header .nav-item{
+        margin-top: 10px;
+    }
+    
+    .advertisement{
+        margin-bottom: 30px;
+    }
+
+}
+@media (max-width: 768px){
+    .dropdown-month{
+        display: block;
+    }
+    .nav-month{
+        display: none;
+    }
+    .logo-text{ 
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px){ 
+    .logo-text{ 
+        font-size: 10px;
+    }
+    .navbar-brand{
+        margin: 0;
+    }
+}
