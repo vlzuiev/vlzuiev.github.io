@@ -7,6 +7,18 @@ body {
 .dropdown{
     z-index: 999999;
 }
+.btn-dropdown{
+    color: #3bb4c1 ;
+}
+.btn-dropdown:hover{
+    color: #3bb4c1;
+    border-radius: 0;
+    outline:none;
+}
+.btn-dropdown:focus{ 
+    outline:none;
+    box-shadow: none;
+}
 
 .top-container {
     padding: 0;
