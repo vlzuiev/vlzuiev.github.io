@@ -4,17 +4,6 @@ body {
     padding-bottom: 4rem;
     font-family: 'Maven Pro', sans-serif;
 }
-.navbar-toggler{
-    padding: 0 !important;
-    transform: scale(0.8);
-}
-select {
-    word-wrap: normal;
-    border: none;
-    padding: 8px;
-    color: #3bb4c1 !important;
-    background: transparent;
-} 
 
 .top-container {
     padding: 0;
@@ -139,10 +128,6 @@ footer p {
     top: 0;
     left: 0;
     transition: all 0.3s ease-in-out;
-}
-
-.active {
-    background-color: #f39100;
 }
 
 .active .type8 {
