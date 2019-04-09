@@ -4,6 +4,9 @@ body {
     padding-bottom: 4rem;
     font-family: 'Maven Pro', sans-serif;
 }
+.dropdown{
+    z-index: 999999;
+}
 
 .top-container {
     padding: 0;
